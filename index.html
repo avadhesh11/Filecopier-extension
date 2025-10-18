@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File copy</title>
+     <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 300px;
+      padding: 10px;
+      background-color: #f9fafb;
+    }
+    h3 {
+      margin-top: 0;
+      color: #333;
+    }
+    .file {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+      background: #fff;
+      padding: 5px 8px;
+      border-radius: 6px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    button {
+      border: none;
+      background: #007bff;
+      color: white;
+      padding: 3px 8px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button.delete {
+      background: #dc3545;
+      margin-left: 5px;
+    }
+    input[type="file"] {
+      margin-bottom: 10px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+    <h1>Easy File Copy</h1>
+    <input type="file" id="fileInput" multiple>
+    <div style="display: flex; gap: 5px; margin-bottom: 10px;">
+    <input type="text" id="searchInput" placeholder="Search files..." style="flex: 1; padding: 5px;">
+    <!-- <button id="searchbtn" style="padding: 5px;">Search</button> -->
+    </div>
+    <div id="fileList"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

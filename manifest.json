@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "File Copier",
+  "version": "1.0",
+  "description": "Upload code files and copy their contents with one click.",
+  "permissions": ["storage", "clipboardWrite"],
+  "action": {
+    "default_popup": "index.html"
+  
+  }
+}
